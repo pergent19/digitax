@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 const IncomeSource = () => {
     return (
@@ -65,8 +66,8 @@ const IncomeSource = () => {
                     </div>
                     <hr />
                     <div className="d-flex justify-content-center buttons">
-                        <button className="back">Back</button>
-                        <button className="submit">Proceed</button>
+                        <Link to={`/filing-period`}><button className="back">Back</button></Link>
+                        <Link to={`/general-info`}><button className="submit">Proceed</button></Link>
                     </div>
 
                 </div>

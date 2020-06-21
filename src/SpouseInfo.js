@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 const SpouseInfo = () => {
     return (
@@ -92,7 +93,7 @@ const SpouseInfo = () => {
 
                     <hr />
                     <div className="d-flex justify-content-center buttons">
-                        <button className="back">Back</button>
+                        <Link to={`/spouse-background`}><button className="back">Back</button></Link>
                         <button className="submit" data-toggle="modal" data-target="#exampleModal">Submit</button>
 
 

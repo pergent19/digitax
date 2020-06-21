@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 const JointFilingInfo = () => {
     return (
@@ -31,7 +32,7 @@ const JointFilingInfo = () => {
                     <h3 className="font-weight-bolder pt-4">Joint Filing Information </h3>
                     <hr />
 
-                    <div id="bottom-col">
+                    <div id="joint-bottom-col">
 
                         <div className="row">
                             <div className="form-group col-md-6">
@@ -59,7 +60,7 @@ const JointFilingInfo = () => {
                     </div>
                     <hr />
                     <div className="d-flex justify-content-center buttons">
-                        <button className="back">Back</button>
+                        <Link to={`/general-info`}><button className="back">Back</button></Link>
                         <button className="submit">Proceed</button>
                     </div>
                 </div>

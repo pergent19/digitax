@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import quarter from "../src/images/quarter.png"
 import calendar from "../src/images/calendar.png"
+import { Link } from 'react-router-dom'
 
 const FilingPeriod = () => {
     return (
@@ -59,7 +60,7 @@ const FilingPeriod = () => {
                     <hr />
                     <div className="d-flex justify-content-center buttons">
                         <button className="back">Cancel</button>
-                        <button className="submit">Proceed</button>
+                        <Link to={`/income-source`}><button className="submit">Proceed</button></Link>
                     </div>
 
                 </div>

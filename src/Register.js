@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import taxFiling from "../src/images/tax.png"
 import register from "../src/images/register.png"
 import creditCard from "../src/images/assets/credit-card.png"
+import { Link } from 'react-router-dom'
 
 const Register = () => {
     return (
@@ -75,7 +76,7 @@ const Register = () => {
 
                                     <div className="d-flex justify-content-center">
                                         <div className="col-4">
-                                            <button type="submit" className="submitApplicationBtn">Proceed</button>
+                                            <Link to={`/registered-business`}>  <button type="submit" className="submitApplicationBtn">Proceed</button></Link>
                                         </div>
                                     </div>
 

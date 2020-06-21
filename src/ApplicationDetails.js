@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 const ApplicationDetails = () => {
     return (
@@ -12,7 +13,7 @@ const ApplicationDetails = () => {
                     <li><a href="#home" className="active scroll">Tax Payer Profile</a></li>
                     <li><a href="#about" className="scroll">Application Details</a></li>
                     <li><a href="#service" className="scroll">Forms</a></li>
-                    <li><a href="#menu" className="scroll">Tax Calculation</a></li>
+                    <Link to={`/tax-calculation`}><li><a href="#menu" className="scroll">Tax Calculation</a></li></Link>
                 </ul>
             </nav>
 

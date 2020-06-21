@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import company from "../src/images/assets/corporate.svg"
-
+import { Link } from 'react-router-dom'
 import person from "../src/images/assets/person.svg"
 const Taxpayertype = () => {
     return (
@@ -65,8 +65,8 @@ const Taxpayertype = () => {
                     </div>
                     <hr />
                     <div className="d-flex justify-content-center buttons">
-                        <button className="back">Back</button>
-                        <button className="submit">Proceed</button>
+                        <Link to={`/registered-business`}><button className="back">Back</button></Link>
+                        <Link to={`/background-info`}><button className="submit">Proceed</button></Link>
                     </div>
 
                 </div>

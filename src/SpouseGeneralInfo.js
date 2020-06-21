@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 class SpouseGeneralInfo extends Component {
     render() {
@@ -97,8 +98,8 @@ class SpouseGeneralInfo extends Component {
                         </div>
                         <hr />
                         <div className="d-flex justify-content-center buttons">
-                            <button className="back">Back</button>
-                            <button className="submit">Proceed</button>
+                            <Link to={`/general-info`}><button className="back">Back</button></Link>
+                            <Link to={`/joint-filing`}><button className="submit">Proceed</button></Link>
                         </div>
 
                     </div>

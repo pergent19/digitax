@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 const GeneralInfo = () => {
     return (
         <div id="income-source-section">
             <div className="row">
-                <div className="col-md-4 text-white" id="left-col">
+                <div className="col-md-4 text-white" id="general-left-col">
                     <div className="p-4">
                         <h5 className="pb-2">Tax Filing</h5>
                         <div className="pb-1">
@@ -31,7 +32,7 @@ const GeneralInfo = () => {
                     <h3 className="font-weight-bolder pt-4">Tax Payer's General Information </h3>
                     <hr />
 
-                    <div id="bottom-col">
+                    <div id="genearal-bottom-col">
 
                         <div className="row">
                             <div className="form-group col-md-6">
@@ -105,8 +106,8 @@ const GeneralInfo = () => {
                     </div>
                     <hr />
                     <div className="d-flex justify-content-center buttons">
-                        <button className="back">Back</button>
-                        <button className="submit">Proceed</button>
+                        <Link to={`/income-source`}><button className="back">Back</button></Link>
+                        <Link to={`/joint-filing`}> <button className="submit">Proceed</button></Link>
                     </div>
 
                 </div>

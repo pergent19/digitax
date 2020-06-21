@@ -13,52 +13,83 @@ import GeneralInfo from "./GeneralInfo"
 import SpouseGeneralInfo from "./SpouseGeneralInfo"
 import JointFilingInfo from "./JointFilingInfo"
 import ApplicationDetails from './ApplicationDetails';
+import TaxCalculation from "./TaxCalculation"
+import Transaction from "./Transactions"
+import {
+  BrowserRouter as Router, Switch, Route
+} from "react-router-dom"
 
 
 function App() {
   return (
-    <div>
-      <div className="mb-5">
-        <Register />
-      </div>
-      <div className="mb-5">
-        <TaxPayer />
-      </div>
-      <div className="mb-5">
-        <BackgroundInfo1 />
-      </div>
-      <div className="mb-5">
-        <AddressContactInfo />
-      </div>
-      <div className="mb-5">
-        <TaxRegistration />
-      </div>
-      <div className="mb-5">
-        <SpouseBackgroundInfo />
-      </div>
-      <div className="mb-5">
-        <SpouseInfo />
-      </div>
-      <div className="mb-5">
-        <FilingPeriod />
-      </div>
-      <div className="mb-5">
-        <IncomeSource />
-      </div>
-      <div className="mb-5">
-        <GeneralInfo />
-      </div>
-      <div className="mb-5">
-        <SpouseGeneralInfo />
-      </div>
-      <div className="mb-5">
-        <JointFilingInfo />
-      </div>
-      <div className="mb-5">
-        <ApplicationDetails />
-      </div>
-    </div >
+
+    <Router>
+      <Switch>
+        <Route path="/welcome">
+          <Register />
+        </Route>
+        <Route path="/registered-business">
+          <Registered />
+        </Route>
+        <Route path="/tax-payer">
+          <TaxPayer />
+        </Route>
+        <Route path="/background-info">
+          <BackgroundInfo1 />
+        </Route>
+        <Route path="/address-info">
+          <AddressContactInfo />
+        </Route>
+        <Route path="/tax-registration">
+          <TaxRegistration />
+        </Route>
+        <Route path="/spouse-background">
+          <SpouseBackgroundInfo />
+        </Route>
+        <Route path="/spouse-info">
+          <SpouseInfo />
+        </Route>
+        <Route path="/filing-period">
+          <FilingPeriod />
+        </Route>
+        <Route path="/income-source">
+          <IncomeSource />
+        </Route>
+        <Route path="/general-info">
+          <GeneralInfo />
+        </Route>
+        <Route path="/spouse-geninfo">
+          <SpouseGeneralInfo />
+        </Route>
+        <Route path="/joint-filing">
+          <JointFilingInfo />
+        </Route>
+        <Route path="/application-details">
+          <ApplicationDetails />
+        </Route>
+        <Route path="/tax-calculation">
+          <TaxCalculation />
+        </Route>
+        <Route path="/transaction">
+          <Transaction />
+        </Route>
+      </Switch>
+    </Router>
+
+
+
+
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+

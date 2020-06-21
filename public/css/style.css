@@ -10,12 +10,26 @@ body{
 
         background-color: #505050;
         height: 100vh;
-        padding: 30px 20px;
+        padding: 30px 8px;
 }
+
+#spouse-bg-left-col{
+    background-color: #505050;
+    height: 115vh;
+    padding: 30px 8px;
+}
+#general-left-col{
+    background-color: #505050;
+    height: 110vh;
+    padding: 30px 8px;
+}
+
+
     
 #right-col{
     padding: 20px 100px;
 }
+
 
 input[type="radio"] {
     display: none;
@@ -80,7 +94,23 @@ input:not(:disabled) ~ label {
 
 #bottom-col{
     padding: 30px 0px 60px 0px;
-   
+}
+
+#address-bottom-col{
+    padding: 30px 0px 40px 0px;
+}
+
+#spouse-bg-bottom-col{
+    padding: 30px 0px 0px 0px;
+}
+}
+
+#joint-bottom-col{
+    padding: 30px 0px 220px 0px;
+}
+
+#bg-bottom-col{
+    padding: 30px 0px 5px 0px;
 }
 
 
@@ -94,6 +124,19 @@ input:not(:disabled) ~ label {
     background-color: #f2e8cb;
     color: black;
     margin-bottom: 0;
+   
+
+}
+
+.circle-plus{
+    border-radius: 50%;
+    padding: 30px;
+    border: none;
+    
+}
+
+.container-circle{
+    border: 0px solid white;
 }
 
 .registered-bottom{
@@ -237,6 +280,25 @@ nav .nav-menu li a{
   
 }
 
+.container-transaction-status{
+    background-color:green;
+    padding: 1px 20px;
+    border-radius: 20px;
+    color:white;
+    
+}
+.view{
+    background-color: blue;
+    padding: 0"
+}
+.transaction-h5{
+    font-size: 16px;
+}
+
+.container-transaction-status h6{
+    font-size:14px;
+}
+
 .container-status h5{
     font-weight: lighter;
     text-transform: uppercase;
@@ -288,4 +350,53 @@ nav .nav-menu li a{
 
 .modal-contents{
     padding: 40px
+}
+
+.taxCalculation{
+    margin-top: 300px;
+}
+
+.details1 h5{
+  font-size: 16px;
+}
+
+.details2{
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px 30px;
+}
+
+#taxPayerOrSpouse{
+    border-radius: 50px;
+}
+
+.transactions-section{
+    height: 100vh;
+}
+
+.search-button{
+    border: none;
+    background-color: white;
+
+}
+
+.card-transaction{
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    width: 20rem;
+    height: 15rem;
+}
+
+#tax-calcu-p{
+font-size: 14px;
+}
+
+#tax-due-form{
+    border-radius: 30px;
+}
+
+#tax-rate-form{
+    border-radius: 30px;
+    background-color: #505050;
 }

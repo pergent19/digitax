@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 const SpouseBackgroundInfo = () => {
     return (
@@ -6,7 +7,7 @@ const SpouseBackgroundInfo = () => {
         <div id="header">
 
             <div className="row">
-                <div className="col-md-4 text-white" id="left-col">
+                <div className="col-md-4 text-white" id="spouse-bg-left-col">
                     <div className="p-4">
                         <h5 className="pb-4">Please Provide Required Details</h5>
                         <div className="pb-1">
@@ -40,7 +41,7 @@ const SpouseBackgroundInfo = () => {
                 <div className="col-md-8" id="right-col">
                     <h3 className="font-weight-bolder">Tax Payer's Spouse Background Information</h3>
                     <hr />
-                    <div id="bottom-col">
+                    <div id="spouse-bg-bottom-col">
                         <div className="row">
                             <div className="form-group col-12">
                                 <label htmlFor="TaxPayersIdNum">Tax Payer's Spouse Identification Number</label>
@@ -88,8 +89,8 @@ const SpouseBackgroundInfo = () => {
 
                     <hr />
                     <div className="d-flex justify-content-center buttons">
-                        <button className="back">Back</button>
-                        <button className="submit" >Proceed</button>
+                        <Link to={`/tax-registration`}><button className="back">Back</button></Link>
+                        <Link to={`/spouse-info`}><button className="submit" >Proceed</button></Link>
 
                     </div>
                 </div>
