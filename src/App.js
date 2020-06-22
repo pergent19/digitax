@@ -15,6 +15,8 @@ import JointFilingInfo from "./JointFilingInfo"
 import ApplicationDetails from './ApplicationDetails';
 import TaxCalculation from "./TaxCalculation"
 import Transaction from "./Transactions"
+import Dashboard from "./Dashboard"
+import Navbar from "./Navbar";
 import {
   BrowserRouter as Router, Switch, Route
 } from "react-router-dom"
@@ -24,7 +26,11 @@ function App() {
   return (
 
     <Router>
+
+
       <Switch>
+
+
         <Route path="/welcome">
           <Register />
         </Route>
@@ -72,6 +78,9 @@ function App() {
         </Route>
         <Route path="/transaction">
           <Transaction />
+        </Route>
+        <Route path="/dashboard">
+          <Dashboard />
         </Route>
       </Switch>
     </Router>

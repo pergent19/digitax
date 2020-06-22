@@ -17,7 +17,7 @@ const ApplicationDetails = () => {
                 </ul>
             </nav>
 
-            <div className="header-1">
+            <div className="header-1-application-details">
                 <div className="row">
                     <div className="col-md-5 p-3 offset-1" id="application-left-col">
                         <div className="d-flex justify-content-around details">

@@ -61,7 +61,7 @@ const JointFilingInfo = () => {
                     <hr />
                     <div className="d-flex justify-content-center buttons">
                         <Link to={`/general-info`}><button className="back">Back</button></Link>
-                        <button className="submit">Proceed</button>
+                        <Link to={`/spouse-geninfo`}><button className="submit">Proceed</button></Link>
                     </div>
                 </div>
             </div>

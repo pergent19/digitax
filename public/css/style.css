@@ -5,21 +5,22 @@
 }
 body{
   overflow-x: hidden;
+ font-family: 'Roboto', sans-serif;
 }
 #left-col{
 
-        background-color: #505050;
+        background-color: rgb(49,50,71);
         height: 100vh;
         padding: 30px 8px;
 }
 
 #spouse-bg-left-col{
-    background-color: #505050;
+    background-color: rgb(49,50,71);
     height: 115vh;
     padding: 30px 8px;
 }
 #general-left-col{
-    background-color: #505050;
+    background-color: rgb(49,50,71);
     height: 110vh;
     padding: 30px 8px;
 }
@@ -52,13 +53,13 @@ input:not(:disabled) ~ label {
   input[type="radio"]:checked + label {
     background: #505050;
     color: hsla(215, 0%, 100%, 1);
-    box-shadow: 0px 0px 20px #505050;
+    box-shadow: 0px 0px 20px rgb(49,50,71);
   }
 
   input[type="radio"]:checked + label::after {
     color: hsla(215, 5%, 25%, 1);
     font-family: FontAwesome;
-    border: 2px solid #505050;
+    border: 2px solid rgb(49,50,71);
     font-size: 24px;
     position: absolute;
     top: -25px;
@@ -103,7 +104,7 @@ input:not(:disabled) ~ label {
 #spouse-bg-bottom-col{
     padding: 30px 0px 0px 0px;
 }
-}
+
 
 #joint-bottom-col{
     padding: 30px 0px 220px 0px;
@@ -153,7 +154,7 @@ input:not(:disabled) ~ label {
   }
 
   .card-body{
-      background-color: #505050;
+      background-color: rgb(49,50,71);
   }
 .card-text{
     margin-bottom: 0;
@@ -223,7 +224,7 @@ nav .nav-menu li a{
 }
 
 .applicationDetails{
-    height: 90vh;
+    height: 130vh;
 }
 
 
@@ -233,7 +234,19 @@ nav .nav-menu li a{
 
 .header-1{
     padding: 50px;
-    background-color:#d7d7d9 ;
+    background-color:#d7d7d9;
+    height: 90vh;
+}
+
+.header-1-application-details{
+    padding: 50px;
+    background-color:#d7d7d9;
+    height: 130vh;
+}
+.header-1-tax-calculation{
+    padding: 50px;
+    background-color:#d7d7d9;
+    height: 130vh;
 }
 
 #application-left-col{
@@ -242,7 +255,7 @@ nav .nav-menu li a{
 }
 
 .details h5{
-    margin-right: 260px;
+    margin-right: 180px;
 }
 
 .details a{
@@ -250,7 +263,7 @@ nav .nav-menu li a{
 }
 
 #application-right-col{
-    background-color: #505050;
+    background-color: rgb(49,50,71);
     border-radius: 10px;
 }
 
@@ -310,7 +323,7 @@ nav .nav-menu li a{
 }
 
 #creationDate{
-    background-color: #505050;
+    background-color: rgb(49,50,71);
 }
 
 .borderBot{
@@ -398,5 +411,35 @@ font-size: 14px;
 
 #tax-rate-form{
     border-radius: 30px;
-    background-color: #505050;
+    background-color: rgb(49,50,71);
+}
+
+
+/* Navbar */
+.sidenav---sidenav---_2tBP{
+    /* background-color: rgb(49,50,71) !important; */
+    background-color: whitesmoke !important;
+}
+.sidenav---navtext---1AE_f{
+    color: black !important;
+}
+
+.sidenav---icon-bar---u1f02{
+    background-color: black  !important;
+}
+.fa-user-circle:before {
+    color: black;
+}
+.fa.fa-line-chart:before{
+    color: black;
+}
+
+.nav-buttons{
+    text-decoration: none  !important;
+    color: black  !important;
+}
+
+.sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-.sidenav---highlighted---oUx9u > .sidenav---navitem---9uL5T::after, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-:hover.sidenav---highlighted---oUx9u > .sidenav---navitem---9uL5T::after {
+     background: whitesmoke !important; 
+    text-decoration: none !important;
 }

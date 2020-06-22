@@ -36,16 +36,7 @@ class SpouseGeneralInfo extends Component {
                         <div id="bottom-col">
 
                             <div className="row">
-                                <div className="form-group col-md-6">
-                                    <label htmlFor="amended">Spouse Type</label>
-                                    <div className="input-group mb-3">
-                                        <select className="custom-select" id="amended">
-                                            <option defaultValue>Choose</option>
-                                            <option value="single">Yes</option>
-                                            <option value="single">No</option>
-                                        </select>
-                                    </div>
-                                </div>
+
 
                                 <div className="form-group col-md-6">
                                     <label htmlFor="taxRate">Tax Rate</label>
@@ -57,9 +48,7 @@ class SpouseGeneralInfo extends Component {
                                         </select>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div className="row">
 
                                 <div className="form-group col-md-6">
                                     <label htmlFor="shortReturn">Short Period Return?</label>
@@ -71,13 +60,17 @@ class SpouseGeneralInfo extends Component {
                                         </select>
                                     </div>
                                 </div>
+                            </div>
+
+
+
+
+                            <div className="row">
+
                                 <div className="form-group col-md-6">
                                     <label htmlFor="alphaNumTaxCode">Alphanumeric Tax Code</label>
                                     <input type="text" className="form-control" id="alphaNumTaxCode" />
                                 </div>
-                            </div>
-
-                            <div className="row">
 
                                 <div className="form-group col-md-6">
                                     <label htmlFor="foreignTax">Claiming Foreign Tax Credit?</label>
@@ -89,6 +82,13 @@ class SpouseGeneralInfo extends Component {
                                         </select>
                                     </div>
                                 </div>
+                            </div>
+
+
+
+                            <div className="row">
+
+
                                 <div className="form-group col-md-6">
                                     <label htmlFor="foreignTax">Foreign Tax Number</label>
                                     <input type="number" className="form-control" id="foreignTax" />
